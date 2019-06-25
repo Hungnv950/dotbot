@@ -7,12 +7,12 @@ export DOTFILES=./
 # Ack like nano
 bindkey -v
 
-ZSH_THEME="agnoster"
+ZSH_THEME="avit"
 
 export UPDATE_ZSH_DAYS=7
 
 # Plugin
-plugins=(zsh-autosuggestions tmuxinator tmux vi-mode autojump)
+plugins=(zsh-autosuggestions tmuxinator tmux vi-mode autojump docker docker-compose git)
 
 # User configuration
 export PATH="$HOME/.rvm/bin:$PATH"
@@ -24,10 +24,11 @@ export TERM="xterm-256color"
 export EDITOR="nano"
 
 # Alias
-source $HOME/Documents/dotfiles/zsh/alias.zsh
+source $HOME/Documents/dotbot/zsh/alias.zsh
 
 bindkey '^ ' autosuggest-execute
 RPROMPT="\$(~/.rvm/bin/rvm-prompt s i v g)%{$fg[yellow]%}[%*]"
 # eval "$(pyenv init -)"
 eval $(thefuck --alias)
-source /etc/bash_completion.d/climate_completion
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+dbash() { docker exec -it $(docker ps -aqf "name=indahash-nttd_app") bash  }

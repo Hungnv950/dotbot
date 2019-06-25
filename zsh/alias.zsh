@@ -2,7 +2,9 @@
 alias gd="git diff @~..@"
 alias grs="git reset HEAD~1"
 alias gst="git status -s"
+alias came="git commit --amend --no-edit"
 alias gsta="git add -A; git stash"
+
 # alias gcl="git clone $(xclip -selection c -o)"    # Xclip required
 
 # ============ Devevelopment ===============
@@ -39,3 +41,5 @@ alias l="ls"
 alias update="sudo apt-get update"
 alias install="sudo apt-get install"
 alias add="sudo add-apt-repository"
+
+dbash() { docker exec -it $(docker ps -aqf "name=indahash-nttd_app") bash  }

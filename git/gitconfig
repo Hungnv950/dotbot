@@ -1,0 +1,67 @@
+[user]
+  name = hungbnv-1225
+  email = nguyen.van.hungb@sun-asterisk.com
+
+[color]
+	ui = true
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold # line info
+	old = red # deletions
+	new = green # additions
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[alias]
+  co = checkout
+  cod = checkout develop
+  cob = checkout -b
+  coo = !git fetch && git checkout
+  br = branch
+  brd = branch -d
+  brD = branch -D
+  st = status
+  aa = add -A
+  cm = commit -m
+  aacm = !git add -A . && git commit -m
+  cp = cherry-pick
+  amend = commit --amend --no-edit
+  dev = !git checkout develop && git pull origin develop
+  devsun = !git checkout develop && git pull sun develop
+  dev3 = !git checkout dev_sprint3 && git pull sun dev_sprint3
+
+  rbdev = rebase develop
+  rbc = rebase --continue
+  staging = !git checkout staging && git pull origin staging
+  master = !git checkout master && git pull origin
+  po = push origin
+  pod = push origin develop
+  pos = push origin staging
+
+  pom = push origin master
+  poh = push origin HEAD
+
+  plo = pull origin
+  plod = pull origin develop
+  plosd = pull sun develop
+  plos = pull origin staging
+  plom = pull origin master
+  ploh = pull origin HEAD
+
+  unstage = reset --soft HEAD^
+  ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+  f = "!git ls-files | grep -i"
+[core]
+	excludesfile = /home/nguyen.van.hungb/.gitignore_global
+[push]
+	default = matching
