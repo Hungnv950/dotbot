@@ -1,0 +1,41 @@
+# Settings
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true # Swap original file
+
+# TODO: Clean dead symlinks
+- clean: ["~", "~/.config"]
+
+- shell:
+    # Install submodules
+    - [git submodule update --init --recursive, Installing submodules]
+    - echo "Test Shell"
+
+# Symlink files
+- link:
+    # Zsh
+    # ~/.zshrc: zsh/zshrc
+    #sublime text
+    ~/.config/sublime-text-3/Packages/User/Package Control.sublime-settings:
+      create: true
+      force: true
+      path: sublimetext3/Package Control.sublime-settings
+
+    # Coppy installed setting sublime text
+    ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings:
+      create: true
+      force: true
+      path: sublimetext3/Preferences.sublime-settings
+
+    # Coppy configs sublime text
+    ~/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap:
+      create: true
+      force: true
+      path: sublimetext3/Default (Linux).sublime-keymap
+
+    # Config Visual studio config
+    ~/.config/Code/User/setting.json:
+      create: true
+      path: visualcode/Setting
