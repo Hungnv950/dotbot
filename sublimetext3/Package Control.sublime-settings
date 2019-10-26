@@ -1,37 +1,32 @@
 {
-	"bootstrapped": true,
-	"in_process_packages":
-	[
-	],
-	"installed_packages":
-	[
-		"A File Icon",
-		"All Autocomplete",
-		"AutoFileName",
-		"BeautifyRuby",
-		"Better CoffeeScript",
-		"BracketHighlighter",
-		"DocBlockr",
-		"Emmet",
-		"GitGutter",
-		"HTML2Slim",
-		"I18n Rails",
-		"Increment Selection",
-		"JavaScript Refactor",
-		"JSX",
-		"Package Control",
-		"Rails Partial",
-		"React IDE",
-		"React Templates",
-		"ReactJS",
-		"ReactJS Snippets",
-		"Ruby Slim",
-		"SCSS",
-		"SideBarEnhancements",
-		"Simple JSX",
-		"Slime",
-		"SublimeCodeIntel",
-		"Terminal",
-		"View In Browser"
-	]
+   "bootstrapped":true,
+   "in_process_packages":[
+
+   ],
+   "installed_packages":[
+      "A File Icon",
+      "All Autocomplete",
+      "AutoFileName",
+      "BeautifyRuby",
+      "Better CoffeeScript",
+      "BracketHighlighter",
+      "DocBlockr",
+      "Emmet",
+      "GitGutter",
+      "I18n Rails",
+      "JavaScript Refactor",
+      "JSX",
+      "Package Control",
+      "Rails Partial",
+      "React IDE",
+      "React Templates",
+      "ReactJS",
+      "ReactJS Snippets",
+      "SCSS",
+      "SideBarEnhancements",
+      "Simple JSX",
+      "SublimeCodeIntel",
+      "Terminal",
+      "View In Browser"
+   ]
 }
